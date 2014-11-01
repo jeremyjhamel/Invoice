@@ -101,6 +101,30 @@ header{
       margin:0 0 0 10px;
     }
   }
+
+  table{
+    float:left;
+    margin:10px 0 0 0;
+    width:350px;
+
+    th{
+      color:$gray_dark;
+      font-family:$slab_font;
+      font-weight:700;
+      text-transform:uppercase;
+      width:120px;
+    }
+
+    tr{
+      background:none !important;
+    }
+
+    th, td{
+      background:none !important;
+      text-align:left;
+      vertical-align:top;
+    }
+  }
 }
 
 table{
@@ -172,11 +196,15 @@ footer{
 
   @include clearfix;
 
+  a{
+    color:$white;
+  }
+
   div.right{
     display:table;
     font-size:0.7em;
     margin:0 auto;
-    width:300px;
+    width:400px;
 
     div.contact{
       display:table-cell;
